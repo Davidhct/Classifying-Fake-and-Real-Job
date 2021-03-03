@@ -33,18 +33,18 @@ All the fake jobs will be tagged as 1 and all the real jobs will be tagged as 0,
 
 
 # Frequency of Words for Geniune / Fake applications:
-![picture](benefits.png)
-![picture](description.png)
-![picture](company_profile.png)
-![picture](requirments.png)
+![picture](images/benefits.png)
+![picture](images/description.png)
+![picture](images/company_profile.png)
+![picture](images/requirments.png)
 
 ## Distribution over countries 
-![picture](benefits.png)
+![picture](images/countries.png)
 
 # WordCloud
 
 Using WordCloud we can see a visual representation for the distribution of words. <br/>
 ### Genuine Cloud
-![picture](genuine_cloud.png)
+![picture](images/genuine_cloud.png)
 ### Fraud Cloud
-![picture](fraud_cloud.png)
+![picture](images/fraud_cloud.png)
