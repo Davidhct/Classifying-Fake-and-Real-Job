@@ -89,5 +89,5 @@ Using 'TF-idf' Vectorizer to analyze our text and feed it to our models.
 ![picture](images/adaboost_plot.png)
 
 # Authors
-* David Cohen
-* Ido Elmaleh
+* [David Cohen](https://github.com/Davidhct)
+* [Ido Elmaleh](https://github.com/IdosElmo)
