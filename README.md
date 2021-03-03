@@ -30,3 +30,21 @@ All the fake jobs will be tagged as 1 and all the real jobs will be tagged as 0,
 * Fake job postings were mainly aimed at full-time positions, whose requirements were very minimal. <br/>
 * The telecommuting column has the same percentages as the number of real and fake jobs, So this column will not help us either.<br/>
 * After creating a word cloud, it was found that the work publications had similar content, but the originals were more job specific. <br/>
+
+
+# Frequency of Words for Geniune / Fake applications:
+![picture](benefits.png)
+![picture](description.png)
+![picture](company_profile.png)
+![picture](requirments.png)
+
+## Distribution over countries 
+![picture](benefits.png)
+
+# WordCloud
+
+Using WordCloud we can see a visual representation for the distribution of words. <br/>
+### Genuine Cloud
+![picture](genuine_cloud.png)
+### Fraud Cloud
+![picture](fraud_cloud.png)
