@@ -1,9 +1,24 @@
 # Introduction:
+
+### This project is done under Machine Learning Course 2021 at Ariel University. 
+
 Today it is quite difficult to find a job, and a student or just a person looking for a job will look for jobs online in various job ads or posts, 
 and most people will not notice if the job is fake or real. 
 If the job is real then it is excellent, but if the job is fake, it can either lead to a phishing site or it will cause sensitive information to be displayed.<br/>
 
 With the help of advanced natural language processing, it is possible to build a classifier that will identify between fake and real jobs.
+
+# Prerequisite
+```
+numpy v1.20.1
+pandas v1.2.1
+scikit-learn v0.24.1
+mlxtend v0.18.0
+matplotlib v3.3.4
+spacy v3.0.1
+seaborn 0.11.1
+```
+
 
 # Data:
 Using the data from the site: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction <br/>
@@ -73,4 +88,6 @@ Using 'TF-idf' Vectorizer to analyze our text and feed it to our models.
 ![picture](images/rf_plot.png)
 ![picture](images/adaboost_plot.png)
 
-
+# Authors
+* David Cohen
+* Ido Elmaleh
