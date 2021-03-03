@@ -51,7 +51,7 @@ Using WordCloud we can see a visual representation for the distribution of words
 
 # Imbalanced Data
 We have noticed our data is WAY off-balance, as we can see in the following figure: <br/>
-![picture](images/real&fraudulent.png)
+![picture](images/real_fradulent.png)
 
 * We have used Random OverSampler to solve this issue.
 
