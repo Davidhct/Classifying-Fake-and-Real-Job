@@ -45,6 +45,32 @@ All the fake jobs will be tagged as 1 and all the real jobs will be tagged as 0,
 
 Using WordCloud we can see a visual representation for the distribution of words. <br/>
 ### Genuine Cloud
-![picture](images/genuine_cloud.png)
+![picture](images/genuine_cloud.jpeg)
 ### Fraud Cloud
-![picture](images/fraud_cloud.png)
+![picture](images/fraud_cloud.jpeg)
+
+# Imbalanced Data
+We have noticed our data is WAY off-balance, as we can see in the following figure: <br/>
+![picture](images/real&fraudulent.png)
+
+* We have used Random OverSampler to solve this issue.
+
+# Results
+
+Overall results are quite impressive. Un-balanced data has caused alot of issues and overfit problems. <br/>
+Using 'TF-idf' Vectorizer to analyze our text and feed it to our models.
+
+### Comparisons
+* Overall scores <br/>
+
+![picture](images/acc_comp.png)
+
+* Individual Training Scores <br/>
+
+![picture](images/svm_plot.png)
+![picture](images/lr_plot.png)
+![picture](images/knn_plot.png)
+![picture](images/rf_plot.png)
+![picture](images/adaboost_plot.png)
+
+
