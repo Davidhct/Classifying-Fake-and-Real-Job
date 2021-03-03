@@ -1,8 +1,17 @@
-# תיאור של מאגר המידע:
+# Introduction:
+Today it is quite difficult to find a job, and a student or just a person looking for a job will look for jobs online in various job ads or posts, 
+and most people will not notice if the job is fake or real. 
+If the job is real then it is excellent, but if the job is fake, it can either lead to a phishing site or it will cause sensitive information to be displayed.<br/>
 
-המאגר יהיה בנוי מהצעות עבודה אמיתיות ומזויפות המתויגות ב- 0 ו- 1 בהתאמה.                                                     כל הצעת עבודה תפורט תחת העמודות המתאימות לאותו פרמטר, לדוגמה: שם העבודה יהיה תחת העמודה title, מיקום העבודה יהיה תחת העמודה location, לאיזו מחלקה שייכת העבודה תהיה תחת העמודה department, משכורת אם ציינו יהיה תחת העמודה salary_range וכן הלאה.
+With the help of advanced natural language processing, it is possible to build a classifier that will identify between fake and real jobs.
 
-## העמודות
+# Data:
+Using the data from the site: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction <br/>
+The data set contains about 18,000 job descriptions, of which about 800 are fake jobs. Using this data set, it is possible to create models that will learn and classify the fake jobs and the real ones. <br/>
+
+All the fake jobs will be tagged as 1 and all the real jobs will be tagged as 0, under the ```'fraudulent'``` column, all information under the other columns will be the features. <br/>
+
+### The following is a list of columns from the data set:                                                   
 ```
 ['job_id', 'title', 'location', 'department', 'salary_range'
 'company_profile', 'description', 'requirements', 'benefits',
@@ -10,16 +19,14 @@
 'required_experience', 'required_education', 'industry', 'function','fraudulent']
 ```
 
-כאשר העמודה האחרונה 'fraudulent' תהיה התיוג שלנו כלומר, 0 למשרה אמיתית ו- 1 למשרה מזויפת.
+# Data cleanning:
+### The cleaning process included:
+* Replacing places where NaN's is written, to a number. <br/>
+* Delete duplicate rows. <br/>
+* Deleting columns where the data is relatively identical between the data of the fake jobs and the real jobs, so they will not help us so much. <br/>
 
-כמה נקודות ציון בנוגע למאגר:
-
-•	העמודות של  'function' ו- 'department' הן זהות, לכן כבר ירדה לנו עמדה. 
-
-•	פרסומי עבודה מזויפים היו מכוונים בעיקר לתפקידים במשרה מלאה, שהייתה להם דרישה מינימלית של תואר ראשון וניסיון עבודה ברמת Mid-Senior.
-
-•	לעמודה של 'telecommuting' אחוזים זהים יחסית לכמות של משרות אמיתיות ומזויפות, לכן העמודה הזאת גם לא תעזור לנו.
-
-•	לאחר יצירת ענן מילים, נמצא כי לפרסומי העבודה יש תוכן דומה, אך המקוריים היו ספציפיים יותר לתפקיד.
-
-•	צרפתי את המאגר שלנו בקובץ שנקרא: fake_job_postings.csv
+### Some conclusions about the data set:
+* The 'function' and 'department' columns are identical, so we will remove one of them. <br/>
+* Fake job postings were mainly aimed at full-time positions, whose requirements were very minimal. <br/>
+* The telecommuting column has the same percentages as the number of real and fake jobs, So this column will not help us either.<br/>
+* After creating a word cloud, it was found that the work publications had similar content, but the originals were more job specific. <br/>
