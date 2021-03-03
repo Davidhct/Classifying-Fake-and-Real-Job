@@ -41,19 +41,24 @@ All the fake jobs will be tagged as 1 and all the real jobs will be tagged as 0,
 * Deleting columns where the data is relatively identical between the data of the fake jobs and the real jobs, so they will not help us so much. <br/>
 
 ### Some conclusions about the data set:
-* The 'function' and 'department' columns are identical, so we will remove one of them. <br/>
+* The ```'function'``` and ```'department'``` columns are identical, so we will remove one of them. <br/>
 * Fake job postings were mainly aimed at full-time positions, whose requirements were very minimal. <br/>
 * The telecommuting column has the same percentages as the number of real and fake jobs, So this column will not help us either.<br/>
 * After creating a word cloud, it was found that the work publications had similar content, but the originals were more job specific. <br/>
 
 
 # Frequency of Words for Geniune / Fake applications:
-![picture](images/benefits.png)
-![picture](images/description.png)
+In the following pictures, you can see the number of occurrences of the different words in relation to their occurrences in real posts and fake posts: <br/>
+* In ```'company_profile'``` you can see that in fake jobs there are fewer words than in real jobs. <br/>
 ![picture](images/company_profile.png)
+* In the ```'description'```, ```'requirements'``` and ```'benefits'``` you can see that the distribution of the words in the three graphs is relatively the same, but you can see that the distribution of the words in real posts is more focused. <br/>
+![picture](images/description.png)
 ![picture](images/requirments.png)
+![picture](images/benefits.png)
+
 
 ## Distribution over countries 
+* It can be seen that the real jobs come from all sorts of countries, but fake jobs are more targeted in the United States. <br/>
 ![picture](images/countries.png)
 
 # WordCloud
@@ -68,12 +73,14 @@ Using WordCloud we can see a visual representation for the distribution of words
 We have noticed our data is WAY off-balance, as we can see in the following figure: <br/>
 ![picture](images/real_fradulent.png)
 
-* We have used Random OverSampler to solve this issue.
+* We have used Random Over Sampler to solve this issue. <br/>
+```from imblearn.over_sampling import RandomOverSampler```
 
 # Results
 
 Overall results are quite impressive. Un-balanced data has caused alot of issues and overfit problems. <br/>
-Using 'TF-idf' Vectorizer to analyze our text and feed it to our models.
+Using 'TF-idf' Vectorizer to analyze our text and feed it to our models. <br/>
+```from sklearn.feature_extraction.text import TfidfVectorizer```
 
 ### Comparisons
 * Overall scores <br/>
